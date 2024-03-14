@@ -11,3 +11,4 @@ int main(){
         if (c>b&&c>a) cout << "TOAN";
     return 0;
 }
+
