@@ -1,14 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define name "cau1"
 int main(){
-    freopen("special.inp", "r", stdin);
-    freopen("special.out", "w", stdout);
-    long n,a[100000];
-    cin >> n;
-    for(int i=0; i<n; i++){
-        cin >> a[i];
-    }
-    sort(a,a+n,greater<int>());
-    cout<< a[1]+a[2]+a[0];
+
+    freopen(name".inp", "r", stdin);
+    freopen(name".out", "w", stdout);
+    long long n,m,k,res=1;
+    cin >> n>>m>>k;
+    for(int i=n; i<=m; i++) res= ((res%k)*(i%k))%k;
+    cout<< res;
+    
+    
     return 0;
 }
