@@ -1006,6 +1006,8 @@ function SlimeUI:KeySystem(o)
 
     local function check(k)
         k = Trim(k)
+        remoteCheck(k)
+
         return true
         
     end
